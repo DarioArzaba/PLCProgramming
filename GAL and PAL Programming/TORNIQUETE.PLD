@@ -1,0 +1,34 @@
+Name     Torniquete ;
+PartNo   00 ;
+Date     13/09/2019 ;
+Revision 01 ;
+Designer Engineer ;
+Company  ITESM ;
+Assembly None ;
+Location  ;
+Device   g16v8a ;
+
+/* *************** INPUT PINS *********************/
+PIN   2  = C                        ; /*                                 */ 
+PIN   3  = T                        ; /*                                 */ 
+PIN   4  = QD                        ; /*                                 */ 
+PIN   5  = QDn                        ; /*                                 */ 
+PIN   6  = QT ;
+PIN   7  = QTn ;
+PIN   8  = QSR ;
+PIN   9  = QSRn ;
+
+/* *************** OUTPUT PINS *********************/
+PIN  12   = D                        ; /*                                 */ 
+PIN  13   = TE                        ; /*                                 */ 
+PIN  14   = S                        ; /*                                 */ 
+PIN  15   = R                        ; /*                                 */ 
+PIN  16   = J                        ; /*                                 */ 
+PIN  17   = K                        ; /*                                 */ 
+
+D = (QDn&C)#(QD&!T)#(C&!T);
+TE = (QTn&C)#(QT&T)#(C&T);
+S = QSRn&C;
+R = QSR&T;
+J = C;
+K = T;

@@ -1,0 +1,361 @@
+FILE,LAD 2
+SOR,0 BST,1 XIC,I:1/0 NXB,1 XIC,O:2/2 BND,1 XIC,I:1/1 OTE,O:2/2 EOR,0
+RCM,Start /Stop control
+SOR,1 XIC,I:1/5 OTE,B3:1/0 EOR,1
+RCM,if autofill selected set bit
+SOR,2 XIC,I:1/7 OTE,B3:1/1 EOR,2
+RCM,If Bypass selected set bit
+SOR,3 BST,1 XIO,I:1/3 NXB,1 BST,2 XIC,B3:0/0 NXB,2 BST,3 XIC,B3:1/0 XIC,O:2/4 NXB,3 XIC,B3:1/1 BND,3 BND,2 BND,1 XIC,O:2/2 OTE,O:2/0 EOR,3
+RCM,Motor drive control
+SOR,4 XIC,O:2/2 XIC,I:1/3 XIO,O:2/4 XIO,B3:0/0 XIO,B3:1/1 BST,1 OTE,O:2/1 NXB,1 OTE,O:2/3 BND,1 EOR,4
+RCM,Fill valve and fill light control
+SOR,5 BST,1 XIC,I:1/4 NXB,1 XIC,O:2/4 BND,1 XIC,I:1/3 OTE,O:2/4 EOR,5
+RCM,Containor Full Light
+SOR,6 XIC,I:1/6 XIC,I:1/3 XIC,I:1/4 XIC,I:1/0 OTL,B3:0/0 EOR,6
+RCM,2nd start control when double start selected
+SOR,7 BST,1 XIO,I:1/3 NXB,1 XIC,I:1/5 BND,1 OTU,B3:0/0 EOR,7
+RCM,2nd start reset when double start selected
+SOR,8 END,8
+RCM,
+FILE,SBR 3:
+SOR,0 END,0
+RCM,
+FILE,SBR 4:
+SOR,0 END,0
+RCM,
+FILE,SBR 5:
+SOR,0 END,0
+RCM,
+FILE,SBR 6:
+SOR,0 END,0
+RCM,
+FILE,SBR 7:
+SOR,0 END,0
+RCM,
+FILE,SBR 8:
+SOR,0 END,0
+RCM,
+FILE,SBR 9:
+SOR,0 END,0
+RCM,
+BTBL
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+NTBL
+6
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+FTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+SYMBOLS
+I:1/0 start
+I:1/1 stop
+O:2/2 run light
+I:1/3 position sensor
+O:2/0 motor
+I:1/4 level sensor
+O:2/1 fill valve
+O:2/3 fill light
+O:2/4 full light
+B3:0/0 2nd start latch
+I:1/5 auto fill
+I:1/7 bypass
+N7:0/0 autofill selected
+N7:0/2 bypass selected
+I:1/6 2nd start selected
+B3:1/0 autofill on
+B3:1/1 Bypass on

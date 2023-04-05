@@ -1,0 +1,366 @@
+FILE,LAD 2:
+SOR,0 XIO,O:2/0 XIO,I:1/3 BST,1 OTL,B3:0/0 NXB,1 OTU,B3:1/0 BND,1 EOR,0
+RCM,
+SOR,1 XIC,B3:0/0 XIC,I:1/0 XIC,I:1/5 BST,1 OTL,B3:1/0 NXB,1 OTU,B3:0/0 BND,1 EOR,1
+RCM,
+SOR,2 XIC,B3:1/0 XIO,I:1/1 BST,1 OTL,B3:0/0 NXB,1 OTU,B3:1/0 BND,1 EOR,2
+RCM,
+SOR,3 XIC,B3:1/0 XIC,I:1/3 XIO,B3:0/1 BST,1 OTL,B3:0/1 NXB,1 OTU,B3:1/0 BND,1 EOR,3
+RCM,
+SOR,4 XIC,I:1/0 XIC,I:1/5 XIC,B3:0/1 BST,1 OTL,B3:1/1 NXB,1 OTU,B3:0/1 BND,1 EOR,4
+RCM,
+SOR,5 XIC,B3:0/1 OTL,B3:2/0 EOR,5
+RCM,
+SOR,6 XIO,O:2/1 XIC,I:1/4 BST,1 OTL,B3:0/1 NXB,1 OTU,B3:2/0 BND,1 EOR,6
+RCM,
+SOR,7 XIO,B3:2/0 BST,1 OTL,O:2/1 NXB,1 OTU,B3:0/1 BND,1 EOR,7
+RCM,
+SOR,8 XIC,B3:1/1 XIO,I:1/3 BST,1 OTU,B3:1/1 NXB,1 OTL,B3:1/0 BND,1 EOR,8
+RCM,
+SOR,9 XIC,B3:1/1 OTL,O:2/0 EOR,9
+RCM,
+SOR,10 XIC,B3:0/1 OTU,O:2/0 EOR,10
+RCM,
+SOR,11 XIC,B3:1/0 OTL,O:2/0 EOR,11
+RCM,
+SOR,12 XIC,B3:0/0 OTU,O:2/0 EOR,12
+RCM,
+SOR,13 END,13
+RCM,
+FILE,SBR 3:
+SOR,0 END,0
+RCM,
+FILE,SBR 4:
+SOR,0 END,0
+RCM,
+FILE,SBR 5:
+SOR,0 END,0
+RCM,
+FILE,SBR 6:
+SOR,0 END,0
+RCM,
+FILE,SBR 7:
+SOR,0 END,0
+RCM,
+FILE,SBR 8:
+SOR,0 END,0
+RCM,
+FILE,SBR 9:
+SOR,0 END,0
+RCM,
+BTBL
+1
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+NTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+FTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+SYMBOLS
+B3:0/0 Detenido A
+O:2/0 Motor
+I:1/3 Proximidad
+I:1/0 START
+I:1/5 Modo A
+B3:1/0 Avanza A
+I:1/1 STOP
+B3:0/1 Detenido B
+I:1/4 Nivel
+O:2/1 Valvula
+B3:2/0 Llenado
+B3:1/1 Avanza B

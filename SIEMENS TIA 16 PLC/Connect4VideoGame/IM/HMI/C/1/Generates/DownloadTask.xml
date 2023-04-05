@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DownloadTask>
+  <ProjectInfo
+    DeviceVersion="16.0.0.0"
+    CreationTime="2021-11-01 06:11:00 (UTC)"
+    Runtime="COLORADO"
+    RtProjectName="Conecta.HMI_2[TP700 Comfort]"
+    RtProjectFolderName="Conecta.HMI_2[TP700 Comfort]"
+    DeviceType="TP700 Comfort"
+    DisplayOrientation="0"
+    RTReleaseNo="16.0.0.0"
+    ImageReleaseNo="16.0.0.0"
+    RTCV="16.0.0.0"
+    PRCV="16.0.0.0"
+    FirmwareFileName=""
+    RuntimeFileName=""
+    RuntimeAddonFolderName="CP_7_9" />
+  <FullDownload>pdata.fwc</FullDownload>
+  <FullDownload
+    type="ADMINDATA">pdata.pwx</FullDownload>
+  <FullDownload>ProjectSettings.hsf</FullDownload>
+  <FullDownload>DeviceSettings.hsf</FullDownload>
+</DownloadTask>

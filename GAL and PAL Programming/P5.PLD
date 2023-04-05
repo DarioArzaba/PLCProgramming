@@ -1,0 +1,32 @@
+Name     BCDDISPLAY ;
+PartNo   00 ;
+Date     9/17/2019 ;
+Revision 01 ;
+Designer Engineer ;
+Company  ITESM ;
+Assembly None ;
+Location  ;
+Device   g16v8 ;
+
+PIN [2..5] = A, B, C, D;
+PIN [13..19] = sg, sf, se, sd, sc, sb, sa;
+FIELD entradas = [D, C, B, A];
+FIELD salidas = [sg, sf, se, sd, sc, sb, sa];
+TABLE entradas => salidas {
+'b'0000 => 'b'0111111;
+'b'0001 => 'b'0000110;
+'b'0010 => 'b'1011011;
+'b'0011 => 'b'1001111;
+'b'0100 => 'b'1100110;
+'b'0101 => 'b'1101101;
+'b'0110 => 'b'1111101;
+'b'0111 => 'b'0000111;
+'b'1000 => 'b'1111111;
+'b'1001 => 'b'1100111;
+'b'1010 => 'b'1110111;
+'b'1011 => 'b'1111100;
+'b'1100 => 'b'0111001;
+'b'1101 => 'b'1011110;
+'b'1110 => 'b'1111001;
+'b'1111 => 'b'1110001;
+}

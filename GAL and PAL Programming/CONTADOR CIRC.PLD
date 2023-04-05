@@ -1,0 +1,38 @@
+Name     Contador Circ ;
+PartNo   00 ;
+Date     05/10/2019 ;
+Revision 01 ;
+Designer Engineer ;
+Company  ITESM ;
+Assembly None ;
+Location  ;
+Device   g16v8a ;
+
+/* *************** INPUT PINS *********************/
+PIN  2   =  z0                      ; /*                                 */ 
+PIN  3   =  z1                      ; /*                                 */ 
+PIN  4   =  q0                       ; /*                                 */ 
+PIN  5   =  q0n                       ; /*                                 */ 
+PIN  6   =  q1                       ; /*                                 */ 
+PIN  7   = q1n                        ; /*                                 */ 
+PIN  8   =  q2                       ; /*                                 */ 
+PIN  9   =  q2n                       ; /*                                 */ 
+
+/* *************** OUTPUT PINS *********************/
+PIN   12  = j0                         ; /*                                 */ 
+PIN   13  = k0                        ; /*                                 */ 
+PIN   14  = j1                        ; /*                                 */ 
+PIN   15  = k1;
+PIN   16  = j2;
+PIN   17  = k2;
+PIN   18  = n0;
+PIN   19  = n1;
+
+j0 = (q2n&q1n&!z1&z0)#(q2&q1&!z1&z0)#(q2n&q1&z1&!z0)#(q2&q1n&z1&!z0); 
+k0 = (q2n&q1n&z1&!z0)#(q2n&q1&!z1&z0)#(q2&q1&z1&!z0)#(q2&q1n&!z1&z0);
+j1 = (q2n&q0&!z1&z0)#(q2&q0&z1&!z0);
+k1 = (q2n&q0&z1&!z0)#(q2&q0&!z1&z0);
+j2 = (q1&q0n&!z1&z0)#(q1n&q0n&z1&!z0);
+k2 = (q1n&q0n&!z1&z0)#(q1&q0n&z1&!z0);
+n0 = (q2&q1n&q0n)#(q2n&q1n&q0)#(q2&q1&q0)#(q2n&q1&q0n);
+n1 = (q2n&q1)#(q2&q1n);

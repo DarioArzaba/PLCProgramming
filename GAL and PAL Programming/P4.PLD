@@ -1,0 +1,24 @@
+Name     VUELA ALTO MUY ALTO ;
+PartNo   00 ;
+Date     26/09/2019 ;
+Revision 01 ;
+Designer BOMPHY ;
+Company  itesm ;
+Assembly None ;
+Location  ;
+Device   g16v8a ;
+
+/* *************** INPUT PINS *********************/
+PIN   2  =  g1                       ; /*                                 */ 
+PIN   3  =  g0                       ; /*                                 */ 
+PIN   4  =  w1                       ; /*                                 */ 
+PIN   5  =  w0                       ; /*                                 */ 
+
+/* *************** OUTPUT PINS *********************/
+PIN   18  = h1                        ; /*                                 */ 
+PIN   17  = h0                        ; /*                                 */ 
+
+h1=(!g1&g0&w1)#(g1&!g0&w1&w0);
+h0=(g1&!w1)#(g1&g0&!w0);
+
+

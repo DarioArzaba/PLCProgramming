@@ -1,0 +1,385 @@
+FILE,LAD 2:
+SOR,0 XIC,I:1/0 XIC,I:1/3 XIC,I:1/4 OTL,B3:1/0 EOR,0
+RCM,Si esta completamente cerrada y presiono open se abre
+SOR,1 XIC,B3:1/0 XIO,I:1/0 BST,1 OTL,B3:0/0 NXB,1 OTU,B3:1/0 BND,1 EOR,1
+RCM,
+SOR,2 XIC,B3:0/0 OTE,O:2/0 EOR,2
+RCM,
+SOR,3 XIC,I:1/0 XIO,I:1/3 XIO,I:1/4 OTL,B3:1/1 EOR,3
+RCM,Si esta completamente abierta y presiono open se cierra
+SOR,4 XIC,B3:1/1 XIO,I:1/0 BST,1 OTL,B3:0/1 NXB,1 OTU,B3:1/1 BND,1 EOR,4
+RCM,
+SOR,5 XIC,B3:0/1 OTE,O:2/1 EOR,5
+RCM,
+SOR,6 XIC,I:1/0 XIC,B3:0/0 XIC,I:1/3 XIO,I:1/4 OTL,B3:1/2 EOR,6
+RCM,Si se esta abriendo la puerta y presiono open se detiene UNO
+SOR,7 XIC,B3:1/2 XIO,I:1/0 BST,1 OTL,B3:0/2 NXB,1 OTU,B3:1/2 BND,1 EOR,7
+RCM,Si esta completamente cerrada y presiono open se abre
+SOR,8 XIC,B3:0/2 OTU,B3:0/0 EOR,8
+RCM,Si esta completamente cerrada y presiono open se abre
+SOR,9 XIC,I:1/0 XIC,B3:0/1 XIC,I:1/3 XIO,I:1/4 OTL,B3:1/3 EOR,9
+RCM,Si se esta cerrando la puerta y presiono open se detiene DOS
+SOR,10 XIC,B3:1/3 XIO,I:1/0 BST,1 OTL,B3:0/3 NXB,1 OTU,B3:1/3 BND,1 EOR,10
+RCM,Si esta completamente cerrada y presiono open se abre
+SOR,11 XIC,B3:0/3 OTU,B3:0/1 EOR,11
+RCM,Si esta completamente cerrada y presiono open se abre
+SOR,12 XIC,I:1/0 XIC,B3:0/2 XIC,I:1/3 XIO,I:1/4 BST,1 OTL,B3:1/4 NXB,1 OTU,B3:0/2 BND,1 EOR,12
+RCM,Si se detuvo en UNO y presiono OPEN entonces CERRAR
+SOR,13 XIC,B3:1/4 XIO,I:1/0 BST,1 OTL,B3:0/4 NXB,1 OTU,B3:1/4 BND,1 EOR,13
+RCM,Si esta completamente cerrada y presiono open se abre
+SOR,14 XIC,B3:0/4 BST,1 OTL,B3:0/1 NXB,1 OTU,B3:0/4 BND,1 EOR,14
+RCM,Si esta completamente cerrada y presiono open se abre
+SOR,15 XIC,I:1/0 XIC,B3:0/3 XIC,I:1/3 XIO,I:1/4 BST,1 OTL,B3:1/5 NXB,1 OTU,B3:0/3 BND,1 EOR,15
+RCM,Si se detuvo en DOS y presiono OPEN entonces ABRIR
+SOR,16 XIC,B3:1/5 XIO,I:1/0 BST,1 OTL,B3:0/5 NXB,1 OTU,B3:1/5 BND,1 EOR,16
+RCM,Si esta completamente cerrada y presiono open se abre
+SOR,17 XIC,B3:0/5 BST,1 OTL,B3:0/0 NXB,1 OTU,B3:0/5 BND,1 EOR,17
+RCM,Si esta completamente cerrada y presiono open se abre
+SOR,18 XIC,B3:0/1 XIC,I:1/3 XIC,I:1/4 OTU,B3:0/1 EOR,18
+RCM,ESTADO COMPLETAMENTE CERRADO
+SOR,19 XIC,B3:0/0 XIO,I:1/3 XIO,I:1/4 OTU,B3:0/0 EOR,19
+RCM,ESTADO COMPLETAMENTE ABIERTO
+SOR,20 END,20
+RCM,
+FILE,SBR 3:
+SOR,0 END,0
+RCM,
+FILE,SBR 4:
+SOR,0 END,0
+RCM,
+FILE,SBR 5:
+SOR,0 END,0
+RCM,
+FILE,SBR 6:
+SOR,0 END,0
+RCM,
+FILE,SBR 7:
+SOR,0 END,0
+RCM,
+FILE,SBR 8:
+SOR,0 END,0
+RCM,
+FILE,SBR 9:
+SOR,0 END,0
+RCM,
+BTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+NTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+FTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+SYMBOLS
+B3:0/0 Abrir puerta
+I:1/0 OPEN
+I:1/3 Sensor UP
+I:1/4 Sensor DOWN
+B3:0/1 Cerrar Puerta
+O:2/0 ABRIENDO
+O:2/1 CERRANDO
+B3:0/2 DET UNO
+B3:0/3 DET DOS
+B3:0/4 CERRAR UNO
+B3:1/0 Abrir Puerta B
+B3:1/1 Cerrar Puerta B
+B3:1/2 DET UNO B
+B3:1/3 DET DOS B
+B3:1/4 CERRAR UNO B
+B3:1/5 CERRAR DOS B
+B3:0/5 CERRAR DOS

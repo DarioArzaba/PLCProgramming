@@ -1,0 +1,37 @@
+Name     Name ;
+PartNo   00 ;
+Date     11/04/2020 ;
+Revision 01 ;
+Designer Engineer ;
+Company  ITESM ;
+Assembly None ;
+Location  ;
+Device   g16v8a ;
+
+/* *************** INPUT PINS *********************/
+PIN     3=Q2                         ; /*                                 */ 
+PIN     4=Q1                         ; /*                                 */ 
+PIN     5=Q0                         ; /*                                 */ 
+PIN     6=B                         ; /*                                 */ 
+PIN     7=S                         ; /*                                 */ 
+
+/* *************** OUTPUT PINS *********************/
+PIN     12=H0                         ; /*                                 */ 
+PIN     13=H1                         ; /*                                 */ 
+PIN     14=K0                         ; /*                                 */ 
+PIN     15=J0                         ; /*                                 */ 
+PIN     16=K1                         ; /*                                 */ 
+PIN     17=J1                         ; /*                                 */ 
+PIN     18=K2                         ; /*                                 */ 
+PIN     19=J2                         ; /*                                 */ 
+
+H1=Q1&!Q0;
+H0=Q0&!Q2;
+J2=Q1&Q0&S;
+K2=!Q0&!S;
+J1=Q0&!S;
+K1=!Q2&!Q0&S;
+J0=!Q1&B;
+K0=Q2&B;
+
+

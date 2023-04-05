@@ -1,0 +1,28 @@
+Name     ELEVATE HASTA EL CIELO Y REGRESA ;
+PartNo   00 ;
+Date     26/09/2019 ;
+Revision 01 ;
+Designer BOMPHY ;
+Company  itesm ;
+Assembly None ;
+Location  ;
+Device   g16v8a ;
+
+/* *************** INPUT PINS *********************/
+PIN   2  = v1                        ; /*                                 */ 
+PIN   3  = v2                        ; /*                                 */ 
+PIN   4  = v3                        ; /*                                 */ 
+PIN   5  = o1                        ; /*                                 */ 
+PIN   6  = o2                        ; /*                                 */ 
+PIN   7  = o3                        ; /*                                 */ 
+
+/* *************** OUTPUT PINS *********************/
+PIN   18  = g1                        ; /*                                 */ 
+PIN   17  = g0                        ; /*                                 */ 
+PIN   16  = w1                        ; /*                                 */ 
+PIN   15  = w0                        ; /*                                 */ 
+
+g1=v2#v3;
+g0=v1#v3;
+w1=o2#o3;
+w0=o1#o3;
